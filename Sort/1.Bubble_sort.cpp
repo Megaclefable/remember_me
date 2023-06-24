@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-  /* Example : data.size()=4   data[]=[1,4,3,2] , if the i-th value is bigger than (i+1)-th value, change these position.
+  /* Example : data.size()=4   data[]=[1,4,3,2] , if the i_th value is bigger than (i+1)_th value, change these position.
   i=1 : 
     j=0 -> data[0], data[0+1] treat : data[1,4,3,2] 
   -> j=1 -> data[1], data[1+1] treat : data[1,3,4,2]
