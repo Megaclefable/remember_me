@@ -1,3 +1,5 @@
+<details>
+  <summary> Writing Application Code for the GPU </summary>
 #### Writing Application Code for the GPU
 CUDA provides extensions for many common programming languages, in the case of this lab, C/C++. <br>
 These language extensions easily allow developers to run functions in their source code on a GPU.
@@ -24,5 +26,6 @@ int main()
   GPUFunction<<<1, 1>>>();
   cudaDeviceSynchronize();
 }
+</details>
 
 ```
