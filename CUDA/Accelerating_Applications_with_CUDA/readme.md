@@ -6,7 +6,7 @@ Below is a .cu file (.cu is the file extension for CUDA-accelerated programs). <
 It contains two functions, the first which will run on the CPU, the second which will run on the GPU. 
 Spend a little time identifying the differences between the functions, both in terms of how they are defined, and how they are invoked.
 
-```
+```cuda
 void CPUFunction()
 {
   printf("This function is defined to run on the CPU.\n");
