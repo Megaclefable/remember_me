@@ -6,31 +6,31 @@ void helloCPU()
 }
 
 /*
- * The addition of `__global__` signifies that this function
- * should be launced on the GPU.
+ * Refactor the `helloGPU` definition to be a kernel
+ * that can be launched on the GPU. Update its message
+ * to read "Hello from the GPU!"
  */
 
-__global__ void helloGPU()
+void helloGPU()
 {
-  printf("Hello from the GPU.\n");
+  printf("Hello also from the CPU.\n");
 }
 
 int main()
 {
+
   helloCPU();
 
-
   /*
-   * Add an execution configuration with the <<<...>>> syntax
-   * will launch this function as a kernel on the GPU.
+   * Refactor this call to `helloGPU` so that it launches
+   * as a kernel on the GPU.
    */
 
-  helloGPU<<<1, 1>>>();
+  helloGPU();
 
   /*
-   * `cudaDeviceSynchronize` will block the CPU stream until
-   * all GPU kernels have completed.
+   * Add code below to synchronize on the completion of the
+   * `helloGPU` kernel completion before continuing the CPU
+   * thread.
    */
-
-  cudaDeviceSynchronize();
 }
