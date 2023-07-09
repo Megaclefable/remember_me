@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+/* it starts from 0 -> 0~1023, 0~255  */
+
 __global__ void printSuccessForCorrectExecutionConfiguration()
 {
 
