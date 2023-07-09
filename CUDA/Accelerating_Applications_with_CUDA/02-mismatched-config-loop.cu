@@ -5,8 +5,8 @@ and then seeks to initialize all the values of the array in parallel using a CUD
 This program assumes that both N and the number of threads_per_block are known. 
 Your task is to complete the following two objectives, refer to the solution if you get stuck:
 
-Assign a value to number_of_blocks that will make sure there are at least as many threads as there are elements in a to work on.
-Update the initializeElementsTo kernel to make sure that it does not attempt to work on data elements that are out of range.
+1. Assign a value to number_of_blocks that will make sure there are at least as many threads as there are elements in a to work on.
+2. Update the initializeElementsTo kernel to make sure that it does not attempt to work on data elements that are out of range.
 */
 
 #include <stdio.h>
