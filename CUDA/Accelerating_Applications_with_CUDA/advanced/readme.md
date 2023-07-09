@@ -5,7 +5,8 @@ Defining them with multiple dimensions does not impact their performance in any 
 but can be very helpful when dealing with data that has multiple dimensions, for example, 2d matrices.
 
 To define either grids or blocks with two or 3 dimensions, use CUDA's dim3 type as such:
-```
+
+```cuda
 dim3 threads_per_block(16, 16, 1);
 dim3 number_of_blocks(16, 16, 1);
 someKernel<<<number_of_blocks, threads_per_block>>>();
