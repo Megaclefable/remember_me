@@ -1,3 +1,5 @@
+Accelerating applications with CUDA
+
 <details>
   <summary> Writing Application Code for the GPU </summary>
 
