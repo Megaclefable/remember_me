@@ -2,7 +2,6 @@
 
 ## 1. Fall Through 
 
-
 **explanation:**  
 In C#, if I don't put a break after each case in a switch statement,
 it will not automatically fall through to the next case.
