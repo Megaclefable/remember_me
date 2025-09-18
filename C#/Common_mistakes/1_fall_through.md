@@ -79,5 +79,3 @@ class Program
 
 -> Avoid `if` and `else if` abuse, too many boolean, so use `switch` instead
 
-
-```
