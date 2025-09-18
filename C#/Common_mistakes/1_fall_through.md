@@ -47,10 +47,10 @@ C# works with break.
 
 ** `switch` seems ok?
 
-In practice, `switch` statements are rarely used to evaluate objects.
-They are mostly used with numeric values, enums, or strings.
-Since C cannot evaluate strings, switch statements are used only in a limited way.
-However, C# supports string evaluation, which allows `switch` statements to be used for a wider variety of logic.
+In practice, `switch` statements are rarely used to evaluate objects.  
+They are mostly used with numeric values, enums, or strings.  
+Since C cannot evaluate strings, switch statements are used only in a limited way.  
+However, C# supports string evaluation, which allows `switch` statements to be used for a wider variety of logic.  
 
 
 ```csharp
