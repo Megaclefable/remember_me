@@ -1,11 +1,7 @@
-# 📝 C#에서 자주 하는 실수 (Common Mistakes)
-
-이 문서는 C# 초보자가 자주 실수하는 문법과 개념들을 정리한 노트입니다.  
-각 항목은 설명 → 코드 예시 순서로 구성되어 있습니다.
-
 ---
 
-## ⚡ Fall Through (switch문에서 break 빠뜨림)
+## 1. Fall Through 
+
 
 **설명:**  
 C#의 `switch` 문은 각 `case` 뒤에 `break`를 넣지 않으면  
