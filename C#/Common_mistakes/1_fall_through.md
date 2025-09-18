@@ -4,29 +4,80 @@
 
 
 **explanation:**  
-C#의 `switch` 문은 각 `case` 뒤에 `break`를 넣지 않으면  
-자동으로 다음 `case`로 넘어가지 않습니다. (`fall through`가 안 됨)
+In C#, if I don't put a break after each case in a switch statement,
+it will not automatically fall through to the next case.
 
+
+
+```c
+int a=0;
+switch(0)
+{
+case 0:
+    a++;
+case 1:
+    a++;
+case 2:
+    a++;
+```
+
+The return value will be 3.
+If I run this is c#, there will be an error.
 
 
 ```csharp
-//  잘못된 예시: break가 없어서 컴파일 에러 발생
-switch (x)
+int a=0;
+switch(0)
 {
-    case 1:
-        Console.WriteLine("One");
-    case 2:
-        Console.WriteLine("Two");
-        break;
+case 0:
+    a++;
+    break;
+case 1:
+    a++;
+    break;
+case 2:
+    a++;
+    break;
 }
 
-// 올바른 예시
-switch (x)
+```
+
+C# works with break.
+
+
+** `switch` seems ok?
+
+In practice, `switch` statements are rarely used to evaluate objects.
+They are mostly used with numeric values, enums, or strings.
+Since C cannot evaluate strings, switch statements are used only in a limited way.
+However, C# supports string evaluation, which allows `switch` statements to be used for a wider variety of logic.
+
+
+```csharp
+using System;
+
+class Program
 {
-    case 1:
-        Console.WriteLine("One");
-        break;
-    case 2:
-        Console.WriteLine("Two");
-        break;
+    static void convert(ref string color)
+    {
+        switch(color)
+        {
+            case "Red" : color = "red"; break;
+            case "Blue" : color = :blue"; break;
+            default : color = "undefined"; break;
+        }
+    }
+
+    static void Main(string[] args)
+    {
+        string s = "Red";
+        convert(ref s);
+        Console.WriteLine(s);
+    }
 }
+```
+
+-> Avoid `if` and `else if` abuse, too many boolean, so use `switch` instead
+
+
+```
