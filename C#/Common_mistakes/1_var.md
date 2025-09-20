@@ -2,7 +2,7 @@
 
 ## 1. var
 
-**explanation:**  
+**Explanation:**  
 
 new keyword, instance
 
