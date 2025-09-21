@@ -1,9 +1,4 @@
 // 1_foreach.cs
-// ------------------------------------------------------------
-// This file converts the explanations from 1_foreach.md into a
-// compilable C# source with comments sprinkled throughout.
-// Intended for study notes on GitHub.
-// ------------------------------------------------------------
 
 using System;
 using System.Linq;
