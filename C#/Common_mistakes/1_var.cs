@@ -1,13 +1,9 @@
----
 
-## 1. var
+// 1. var
 
-**Explanation:**  
-
-new keyword, instance
+//new keyword, instance
 
 
-```csharp
 using System;
 using System.IO;
 using System.Collections.Generic;
@@ -23,11 +19,10 @@ class Program
   }
 }
 
-```
 
--> good readability with `var`
 
-```csharp
+//-> good readability with `var`
+
 using System;
 using System.IO;
 using System.Collections.Generic;
@@ -42,8 +37,10 @@ class Program
     foreach(var item in dic.Values) item(Console.Out);
   }
 }
-```
 
+
+/*
 -> 
 Using `var` can make code more concise when dealing with complex generic types.
 However, overusing `var` when the type is not clear can reduce readability.
+*/
