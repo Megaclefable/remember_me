@@ -1,9 +1,4 @@
 // 1_FallThrough.cs
-// ------------------------------------------------------------
-// This file converts the explanations from 1_FallThrough.md into a
-// compilable C# source with comments sprinkled throughout.
-// Intended for study notes on GitHub.
-// ------------------------------------------------------------
 
 using System;
 
