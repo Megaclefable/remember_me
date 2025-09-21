@@ -55,3 +55,23 @@ print result:
 
 Done1 and loop
 ---------------------------------------------- */
+
+
+
+//better to use contrast condition.
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int a = 1;
+        if(a==1)
+        {
+            int b = a*2;
+            if(b<=0) Console.WriteLine(b);
+        }
+        Console.WriteLine("All Done");
+    }
+}
