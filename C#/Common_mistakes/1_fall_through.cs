@@ -108,7 +108,6 @@ namespace FallThroughStudy
 }
 
 /* ------------------------------------------------------------
-Notes (from 1_FallThrough.md, adapted as comments here):
 
 - In C, switch statements fall through by default if you don't
   add 'break'. This can accumulate case executions.
