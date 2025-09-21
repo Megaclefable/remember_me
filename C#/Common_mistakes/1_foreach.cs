@@ -117,7 +117,6 @@ namespace ForeachStudy
 }
 
 /* ------------------------------------------------------------
-Notes (from 1_foreach.md, adapted as comments here):
 
 - for loop: Repeats until a condition becomes false.
 - foreach loop: Pulls one element at a time from an enumerable source.
