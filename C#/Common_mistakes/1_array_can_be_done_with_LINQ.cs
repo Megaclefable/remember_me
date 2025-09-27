@@ -7,7 +7,7 @@ using System;
 
 class Program
 {
-  static void Main(string[] args)
+  static void Main(string[] args) 
   {
     int[] array= {1,-1,2,-2,3};
     foreach(var item in array)
