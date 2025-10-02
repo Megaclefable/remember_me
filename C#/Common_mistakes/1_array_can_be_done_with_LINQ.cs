@@ -6,7 +6,7 @@
 using System;
 
 class Program
-{
+{ 
   static void Main(string[] args) 
   {
     int[] array= {1,-1,2,-2,3};
