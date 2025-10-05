@@ -152,8 +152,3 @@ namespace RepoDemo
         }
     }
 }
-```
-
----
-
-Would you like me to make the English comments *more concise and natural for native developers* (e.g., as if it were a production-ready open-source project)?
